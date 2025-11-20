@@ -17,13 +17,25 @@ Inter css class
   font-style: normal;
 }
   */
+/* CSS variables*/
+:root {
+    --primary-font:  "Inter", sans-serif;
+    --secondary-font: "Macondo", cursive;
+    --primary-color: #3a2620; /*dark brown*/
+    --secondary-color: #aa9581; /*light brown*/
+    --highlight-color: #416a8e; /*dark blue*/
+    --light-highlight-color: #7a9fc2; /*light blue*/
 
-
-body {
-   font-family: "Inter", sans-serif;
-
-    background-color:aquamarine;
 }
-h1 {
-   font-family: "Macondo", cursive;
+
+/*Global stlyles*/
+body {
+    font-family: var(--primary-font);
+}
+h1, h2, h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+.sub-heading-color{
+    color: var(--highlight-color);
 }
